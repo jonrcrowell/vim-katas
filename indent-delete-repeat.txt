@@ -1,6 +1,9 @@
 In this kata you will practice indenting lines, deleting lines, and repeating
 what you've done using the dot operator.
 
+A to append to a line, x to delete a character, u to undo something, and >G to
+indent.
+
 Indent lines 2, 3, and 4
 Start by indenting line 2
 Then navigate down and repeat by using "j."
