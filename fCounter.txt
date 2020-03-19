@@ -1,0 +1,15 @@
+FINISHED FILES ARE THE RE-
+
+SULT OF YEARS OF SCIENTIF-
+
+IC STUDY COMBINED WITH THE
+
+EXPERIENCE OF YEARS.
+
+First I'll count them without using vim.
+5, but I know to look for the Fs in of. Let's see if I got them all.
+
+I got them all. Oh well.
+
+$ takes me to the end of a line. How do I get to the start?
+OK, I found it. ^ takes me to the start and 0 takes me to the first column, which I think is what I'll usually want.

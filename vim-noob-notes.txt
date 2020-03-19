@@ -41,12 +41,16 @@ repetition.
 Tip 3: Take One Step Back, Then Three Forward
 I think "f" is find.
 var foo = "method(" + argument1 + "," + argument2 + ")";
-
-
+OK, somehow what I just typed didn't get saved. Weird.
+";" repeats the last search performed with "f".
+This would be really useful when trying to count the "F" in the text that contains a bunch of "v" sounding "F"s.
+In fact, I'm going to try it now.
 
 ==========================================================================
 Questions:
 Is there a way to navigate within a block fo text that doesn't have carriage returns? I wonder if that is what VISUAL mode is for.
+
+$ gets me to the end of a line. What gets me to the start of a line? ^ or 0.
 
 How do I save a file? When I try :wq or :sav I get an error stating that I
 can't open the file for writing. DOH! It appears I couldn't save the file
