@@ -1,0 +1,77 @@
+So now I created a new file in the vim folder, probably not where I want it.
+
+But it's OK, I learned how to open a file. I use the :e [filename] command.
+
+I wonder if there is a better way of deleting text than using the backspace key when I make a mistake. Why yes, of course there is. I type "i" to enter INSERT mode and then use "x" as my deleting key. It's more comfortable than reaching for the backspace key. Having said that, muscle memory is strong and I have a habit of reaching for the backspace key. I wonder if that is a habit that is worth undoing.
+
+Vim is traditionally run from inside a terminal, which is what I am now doing.
+I'm in a PowerShell Core terminal. I should probably grow a neck beard.
+
+It's interesting that the carriage returns are added above the double-dashed
+line as well as below. It makes more sense than my incorrect assumption that
+they would only be added within the parenthetical dashed lines.
+
+"The dot command lets us repeat the last change. It is the most powerful and
+versatile command in Vim." - Practical Vim, 2nd Edition
+
+I didn't know there was such a thing as a dot command. Let's dig in, shall we?
+
+Tip 1: Meet the Dot Command
+Line one
+	Line two
+		Line three
+			Line four
+
+			OK, so I'm loving Vim so far. Pressing "u" to undo a change is dramatically
+			better than CTRL-Z.
+
+			"dd" is awesome. And combining "dd" with the dot operator is even awesomer.
+			"dd" deleted a line -- note for my future self if I don't have that memorized
+			when I revisit these notes.
+
+Tip 2: Don't Repeat Yourself
+var foo = 1;
+var bar = 'a';
+var foobar = foo + bar;
+This tip covers using the A to append to the end of a line, making the dot
+operator more useful. Adding a semi-colon to the end of each successive line
+is done by typing "j." repeatedly. Tip 30 is hinted at as a way to avoid the
+repetition.
+
+Tip 3: Take One Step Back, Then Three Forward
+I think "f" is find.
+var foo = "method(" + argument1 + "," + argument2 + ")";
+OK, somehow what I just typed didn't get saved. Weird.
+";" repeats the last search performed with "f".
+This would be really useful when trying to count the "F" in the text that contains a bunch of "v" sounding "F"s.
+In fact, I'm going to try it now.
+
+==========================================================================
+Questions:
+Is there a way to navigate within a block fo text that doesn't have carriage returns? I wonder if that is what VISUAL mode is for.
+
+$ gets me to the end of a line. What gets me to the start of a line? ^ or 0.
+
+How do I save a file? When I try :wq or :sav I get an error stating that I
+can't open the file for writing. DOH! It appears I couldn't save the file
+because the folder I was trying to save to didn't exist. Once I created the
+folder saving worked.
+
+What just happened? The line automagically wrapped for some reason. No idea
+what caused it but it just happened again. It looks like it's wrapping to
+conform to the double-line "header" and "footer" I added. Vim is magic. Is it
+inserting carriage returns? I'm able to navigate up and down lines in this
+block with the "j" and "k" keys.
+
+So it is inserting carriage returns for me. I opened the file in Notepad++ to
+verify. I'm sure there is a way to display special characters in Vim as well.
+
+How do I display special characters in Vim?
+
+I need to figure out a base set of commands that I want to commit to memory,
+creat a cheat sheet of those and then a kata to work on every day to get
+there. I'll create a repo with a Vim kata seed that I can use as my starting
+point until I have the commands memorized and then add new ones as I go.
+
+I'm tempted to add Vim to VS Code. I need to know how to disable it though so that it doesn't get in my way until I have committed to using it permanently.
+==========================================================================
